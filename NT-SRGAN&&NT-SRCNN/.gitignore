@@ -1,0 +1,12 @@
+*.tmp
+.DS_Store
+.vs/
+.idea/
+.vscode/
+__pycache__
+*/__pycache__
+dataset/
+pth/srcnn_pth/
+pth/srgan_pth/
+log/srcnn/
+log/srgan/
