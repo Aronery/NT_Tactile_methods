@@ -1,25 +1,19 @@
-# non-planer tactile methods
+# Non-Planar Tactile Methods
 
+## Tools for Original Data
+This section is primarily used for processing raw data, which consists of two main components:
+1. **LR Data** collected by Xela sensors.
+2. **HR Data** captured by GelSight sensors.
 
+Both types of data require processing using the methods provided in this folder.
 
-## tools for orginal data
-主要用于处理数据，数据主要由两部分组成：
-1.Xela采集的LR数据
-
-2.Gelsight采集的HR数据
-
-两者都需要用该文件夹的方法处理
 ## NT-SR3
-使用了基于视觉的SR3方法，用于触觉超分辨率
+This section employs a vision-based SR3 (Super-Resolution) method for tactile super-resolution tasks.
+- **Config**: Used to set parameters that control the model.
+- **sr.py**: Script for training the model.
+- **Dataset**: Before using, place the datasets separately. The `sr4_40` dataset is derived from `lr_4` through interpolation, which can be accomplished using the tools in the `data` folder.
 
-config 用于设置控制模型的参数
-
-sr.py训练模型
-
-dataset：使用前先把数据集分别放置，其中sr4_40由lr_4插值得到，可以使用data文件夹完成。
 ## NT-SRCNN and NT-SRGAN
-utility： 放置了常用了可视化工具
-
-pth：模型文件
-
+- **Utility**: Contains common visualization tools.
+- **pth**: Directory for storing model files.
 
